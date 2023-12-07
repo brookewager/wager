@@ -1,0 +1,369 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+
+  --backgroundColor: #94e2d7;
+  --foregroundColor: #000000;
+
+  --primaryColor: #fdce94;
+  --primaryShade1: #fce3e1;
+  --primaryShade2: #f9d7d6;
+  --primaryShade3: #dcaba9;
+  --primaryShade4: #c69594;
+  --primaryShade5: #0277bd;
+
+  --secondaryColor: #a2e2a6;
+  --secondaryShade1: #6a9978;
+  --secondaryShade2: #c5e1a5;
+  --secondaryShade3: #aed581;
+  --secondaryShade4: #689f38;
+  --secondaryShade5: #558b2f;
+
+  --accentColor: #d8e798;
+  --accentShade1: #e0f2f1;
+  --accentShade2: #b2dfdb;
+  --accentShade3: #4db6ac;
+  --accentShade4: #00796b;
+  --accentShade5: #004d40;
+
+  --accent2Color: #94E2d7;
+  --accent2Shade1: #e7f6d5;
+  --accent2Shade2: #c5e1a5;
+  --accent2Shade3: #aed581;
+  --accent2Shade4: #689f38;
+  --accent2Shade5: #558b2f;
+
+  --accent3Color: #f6ebac;
+  --accent3Shade1: #ffdde0;
+  --accent3Shade2: #ffcdd2;
+  --accent3Shade3: #ef9a9a;
+  --accent3Shade4: #d32f2f;
+  --accent3Shade5: #b71c1c;
+
+  --neutralShade1: #000000;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
+
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+
+  /* You can also use it for generally applied sizing and spacing. */
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+
+  /* Change default root font size (16px), if desired */
+  font-size: 18px;
+}
+
+.skip-to-link {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+/*
+  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+*/
+
+/* GENERAL COLOR SCHEME */
+body {
+  background: var(--backgroundColor);
+  color: var(--neutralShade8);
+}
+
+/*==========
+  TYPOGRAPHY
+===========*/
+
+/* Font Families */
+body { font-family: "Ubuntu", sans-serif;}
+h1,h2,h3 { font-family: "Lora", serif; }
+
+/* Emphasis and Bolding */
+strong { font-weight: 500; }
+em { font-style: italic; }
+
+/* Font Weight, Sizing & Spacing */
+body {
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem,3rem,3.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 500;
+  font-size: clamp(1.75rem,2rem,2.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+}
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem,1.5rem,1.75rem);
+  line-height: 1.2;
+  font-style: italic;
+}
+h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+h6 {
+  font-weight: 200;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+a { font-weight: 500; }
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--neutralShade8);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a:hover {
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.primary:hover {
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+a.secondary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+
+/* HEADER */
+
+header {
+  text-align: center; 
+}
+
+img {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+/* NAVIGATION */
+ul {
+  display: flex; 
+  justify-content: space-around;
+  margin: 5 10rem;
+  flex-wrap: wrap;
+}
+/* MAIN CONTENT */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p { 
+  font-size: 12px
+}
+/* FOOTER */
+
+/* Medium/Tablet Sizes */
+@media screen and (min-width: 768px) {
+
+p {
+  font-size: 1rem;
+}
+.section-main-photo-display-pets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pets_couch_three {
+  display: block;
+  margin: 2rem auto;
+  max-width: 60%;
+  height: auto;
+  text-align: center;
+  border-width: 1rem;
+}
+
+.owner-info-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brooke-tito {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 25%;
+}
+
+.section-main-photo-display-pets img {
+  max-width: 75%;
+  width:100;
+  height: auto;
+  margin-top: 5rem;
+  display:block;
+}
+
+.section-main-photo-display-pets h2 {
+ text-align: center;
+}
+
+.section-about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.section-about .content {
+  flex: 1;
+  max-width: 50%;
+  background-color: #fdce94;
+  padding: 1rem
+}
+
+.section-about img {
+  max-width: 100%;
+  height: auto;
+  margin: 0rem;
+  background-color: #a2e2a6
+}
+
+.section-about.odd {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-about.even {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+}
+
+/* Large Size */
+
+@media screen and (min-width: 1080px) {
+  .section-main-photo-display-pets {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .section-main-photo-display-pets h2 {
+    text-align: center;
+  }
+  
+   .pets_couch_three {
+    display: block;
+    margin: 2rem auto;
+    max-width: 60%;
+    height: auto;
+    text-align: center;
+    border-width: 1rem;
+  }
+  
+  .owner-info-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .brooke-tito {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 30%;
+  }  
+
+  .section-about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .section-about .content {
+    flex: 1;
+    max-width: 50%;
+    background-color: #fdce94;
+    padding: 1rem
+  }
+  
+  .section-about img {
+    max-width: 100%;
+    height: auto;
+    margin: 0rem;
+    background-color: #a2e2a6
+  }
+  
+  .section-about.odd {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .section-about.even {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
