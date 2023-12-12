@@ -11,15 +11,13 @@
 </head> 
 <body>
   <a href="#main" class="skip-to-link">Skip to Main Content</a>
-  <!--HEADERRRRRR-->
+  <!--Header-->
   <header role="banner" aria-labelledby="main-h1"> 
     <nav>
       <ul>
         <li><a href="#leo">Leo</a></li>
-        <li><a href="#tito">Tito</a></li>
         <li><a href="#maybe-the-cat">Maybe</a></li>
-        <li><a href="otherdogs.html">Other Pets</a></li>
-        <li><a href="interestedinfostering.html">Fostering</a></li>
+        <li><a href="#tito">Tito</a></li>
       </ul>
     </nav>       
     <h1 id="main-h1">My Pets!</h1>
@@ -29,8 +27,7 @@
       width="3878" height="2220">  
   </header>
   <main id="main" aria-label="learn-more-about-my-pets">
-  <!-- Grid Intro -->
-    <section class="section-main-photo-display-pets">
+    <section class="section-main-photo-display-pets" role="region" aria-label="pictures-of-the-three-pets">
       <div>
         <h2>Leo</h2>
         <img class="leo-bath"
@@ -38,19 +35,19 @@
         alt="Black Dog outside getting a bath with soap on him"
         width="378" height="378"
         srcset="assets/images/leo-bath-378-square-small.jpg,
-                assets/images/leo-bath-756-square-medium.jpg
+                assets/images/leo-bath-756-square-medium.jpg,
                 assets/images/leo-bath-1512-square-large.jpg">
       </div>
-        <div>
+      <div>
         <h2>Tito</h2>
         <img class="tito-boat"
         src="assets/images/tito-boat-378-square-small.jpg"
         alt="Black and Brown Dog seemingly smiling on boat"
         width="378" height="378"
         srcset="assets/images/tito-boat-378-square-small.jpg,
-                assets/images/tito-boat-756-square-medium.jpg
-                assets/images/tito-boat-1512-square-large.jpg">
-        </div>
+        assets/images/tito-boat-756-square-medium.jpg,
+        assets/images/tito-boat-1512-square-large.jpg">
+      </div>
       <div>
         <h2>Maybe</h2>
         <img class="maybe-bed"
@@ -58,16 +55,20 @@
         alt="White Cat with Green Eyes sitting on Bed"
         width="378" height="378"
         srcset="assets/images/maybe-bed-378-square-small.jpg,
-                assets/images/maybe-bed-756-square-medium.jpg
+                assets/images/maybe-bed-756-square-medium.jpg,
                 assets/images/maybe-bed-1512-square-large.jpg">
       </div>
     </section>
       <div class="owner-info-container">
-        <h3>Meet The Owner</h3>
+    <aside role="region" aria-labelledby="meet-the-owner">
+        <h3 id="meet-the-owner">Meet The Owner</h3>
         <img class="brooke-tito"
+          alt="Girl and Brown Dog Sitting in Grass while Both Smile"
           src="assets/images/brooke-tito-762-761.jpeg"
           width="762
           height=761">
+        <p> Hi, I'm Brooke! I'm an animal lover and I'm really excited to share some information and pictures about my dogs. I'm a student at Virginia Tech and this website is for my online content class!</p>
+    </aside>
       </div>
   <!--#1 Section about Leo-->
     <section class="section-about odd" role="region" aria-labelledby="leo">
@@ -98,20 +99,18 @@
       </div>
     </section>
   <!--#3 Section about Tito-->
-  <section class="section-about odd" role="region" aria-labelledby="tito">
-    <img src="assets/images/tito-smiling-378-504.jpg">
-    <div class="content">
-      <h2 id="tito">Tito</h2>
-      <h3>The Mutt Mutt</h3>
-      <p>Tito is the youngest of everyone! After we got Leo, I told my parents that our next dog had to be from a rescue. So, I went on a search and found Tito, who at that time was known as 'Snickers'! I saw her on a Pennysylvania rescue website, so I reached out and they connected us with her foster mom. They required a meet and greet before adoption, so we met with her foster mom, who informed us that there was another family also coming to meet her and that they would make a decision once they met us both and saw us both interect with her. Of course we had Leo at this time, so the meet and greet was mainly for him. They got along so well, and they had matching brindle fur so we were really hoping that the foster family would pick us. And they did! She's so sweet and everything you could want in a dog. She loves to cuddle, play, and wear t-shirts. She's also obsessed with Leo, and they both have severe attatchment issues. Seriously, you can't take one someplace without the other one freaking out. We got her a DNA test and she's mostly pitbull but has some Great Pyrenees and Sheperd mix!</p>
-    </div>
-  </section>
-
+    <section class="section-about odd" role="region" aria-labelledby="tito">
+      <img src="assets/images/tito-smiling-378-504.jpg">
+      <div class="content">
+        <h2 id="tito">Tito</h2>
+        <h3>The Mutt Mutt</h3>
+        <p>Tito is the youngest of everyone! After we got Leo, I told my parents that our next dog had to be from a rescue. So, I went on a search and found Tito, who at that time was known as 'Snickers'! I saw her on a Pennysylvania rescue website, so I reached out and they connected us with her foster mom. They required a meet and greet before adoption, so we met with her foster mom, who informed us that there was another family also coming to meet her and that they would make a decision once they met us both and saw us both interect with her. Of course we had Leo at this time, so the meet and greet was mainly for him. They got along so well, and they had matching brindle fur so we were really hoping that the foster family would pick us. And they did! She's so sweet and everything you could want in a dog. She loves to cuddle, play, and wear t-shirts. She's also obsessed with Leo, and they both have severe attatchment issues. Seriously, you can't take one someplace without the other one freaking out. We got her a DNA test and she's mostly pitbull but has some Great Pyrenees and Sheperd mix!</p>
+      </div>
+    </section>
   </main>
-    <footer role="contentinfo" aria-label="priority-guide"> 
-      <ul>
-        <li><a href="https://www.mcfacc.org/volunteer" target="_blank">Priority Guide</a></li>
-      </ul>
-    </aside>
+  <footer role="contentinfo" aria-label="priority-guide"> 
+    <ul>
+      <li><a href="https://docs.google.com/document/d/10F-VP9OQYimGow3N2gusECnz-uIJJN3ucdDzl1ETKg0/edit?usp=sharing" target="_blank">Priority Guide</a></li>
+    </ul>
 </body>
 </html>
