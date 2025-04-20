@@ -9,6 +9,35 @@
 <link rel="stylesheet" href="assets/css/wager.css">
 <title>Brooke Wager's Pets</title>
 </head> 
+  
+  <script>
+  fetch('https://brookewager.github.io/wager-repo/dogs.json')
+    .then(response => response.json())
+    .then(data => {
+      const leoInfo = data.dogs.find(dog => dog.name === "Leo");
+      const titoInfo = data.dogs.find(dog => dog.name === "Tito");
+      const maybeInfo = data.dogs.find(dog => dog.name === "Maybe");
+
+      // Example: append favorite treat under Leo's section
+      const leoSection = document.querySelector("#leo").parentElement;
+      const leoTreat = document.createElement("p");
+      leoTreat.textContent = `Favorite treat: ${leoInfo.favorite_treat}`;
+      leoSection.appendChild(leoTreat);
+
+      const titoSection = document.querySelector("#tito").parentElement;
+      const titoTreat = document.createElement("p");
+      titoTreat.textContent = `Favorite treat: ${titoInfo.favorite_treat}`;
+      titoSection.appendChild(titoTreat);
+
+      const maybeSection = document.querySelector("#maybe-the-cat").parentElement;
+      const maybeTreat = document.createElement("p");
+      maybeTreat.textContent = `Favorite treat: ${maybeInfo.favorite_treat}`;
+      maybeSection.appendChild(maybeTreat);
+    })
+    .catch(error => console.error("Failed to fetch dog data:", error));
+</script>
+
+  
 <body>
   <a href="#main" class="skip-to-link">Skip to Main Content</a>
   <!--Header-->
