@@ -1,0 +1,18 @@
+{
+  "dogs": [
+    {
+      "name": "Tito",
+      "age": 4,
+      "breed": "Mutt",
+      "favorite_treat": "Peanut Butter",
+      "photo_url": "images/tito.jpg"
+    },
+    {
+      "name": "Maybe",
+      "age": 15,
+      "breed": "Calico",
+      "favorite_treat": "Strawberries",
+      "photo_url": "images/maybe.jpg"
+    }
+  ]
+}
